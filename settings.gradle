@@ -1,30 +1,5 @@
-// For building exoplayer-specific sample apps, which are located under the 'brightcove-exoplayer' directory.
-include ':brightcove-exoplayer:360VideoSampleApp'
-include ':brightcove-exoplayer:BasicCastGoogleReceiverSampleApp'
-include ':brightcove-exoplayer:BasicCastBrightcoveReceiverSampleApp'
-include ':brightcove-exoplayer:AdRulesIMASampleApp'
-include ':brightcove-exoplayer:AdRulesIMAWidevineModularSampleApp'
-include ':brightcove-exoplayer:AppCompatActivitySampleApp'
-include ':brightcove-exoplayer:AppCompatFragmentSampleApp'
-include ':brightcove-exoplayer:BasicSsaiSampleApp'
-include ':brightcove-exoplayer:BasicSampleApp'
-include ':brightcove-exoplayer:ID3SampleApp'
-include ':brightcove-exoplayer:LiveSampleApp'
-include ':brightcove-exoplayer:OfflinePlaybackSampleApp'
-include ':brightcove-exoplayer:PictureInPictureSampleApp'
-include ':brightcove-exoplayer:TextureViewSampleApp'
-include ':brightcove-exoplayer:WidevineModularSampleApp'
-include ':brightcove-exoplayer:VideoListSampleApp'
-include ':brightcove-exoplayer:BasicIMAVASTSampleApp'
-include ':brightcove-exoplayer:ThumbnailScrubberSampleApp'
-
 // For building Brightcove Player Controls specific sample apps, which are located under the 'brightcove-player-controls' directory.
 include ':brightcove-player-controls:CustomizedControlsSampleApp'
-include ':brightcove-player-controls:StyledControlsSampleApp'
-include ':brightcove-player-controls:RewindArrowLeftSampleApp'
-include ':brightcove-player-controls:RewindBackwardSampleApp'
-include ':brightcove-player-controls:RewindStepBackwardSampleApp'
-include ':brightcove-player-controls:SeekBarColorsSampleApp'
 
 // FreeWheel samples require AdManager.aar v6.28.0 to be added to the libs
 // folder under your home directory.

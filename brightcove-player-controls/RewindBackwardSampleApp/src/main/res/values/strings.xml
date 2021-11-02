@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Backward Rewind Sample App</string>
-
-    <!-- Use the Font Awesome fa-backward icon for the rewind button
-         face. -->
-    <string name="brightcove_controls_rewind">&#xf04a;</string>
-</resources>

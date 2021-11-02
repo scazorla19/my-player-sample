@@ -9,7 +9,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.5.2'
+    classpath 'com.android.tools.build:gradle:7.0.3'
 
     classpath 'com.stanfy.spoon:spoon-gradle-plugin:1.2.2'
   }
@@ -35,7 +35,7 @@ configure(subprojects.findAll {it.name.endsWith('SampleApp')}) {
       url 'https://maven.google.com'
     }
     maven {
-      url 'http://repo.brightcove.com/releases'
+      url 'https://repo.brightcove.com/releases'
     }
     maven {
       url System.getenv('ANDROID_HOME') + '/extras/android/m2repository'
