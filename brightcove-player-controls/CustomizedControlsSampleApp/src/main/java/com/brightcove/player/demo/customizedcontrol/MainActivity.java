@@ -70,9 +70,6 @@ public class MainActivity extends BrightcovePlayer {
             }
         });
 
-        eventEmitter.on(EventType.ENTER_FULL_SCREEN, event -> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE));
-
-        eventEmitter.on(EventType.EXIT_FULL_SCREEN, event -> setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT));
     }
 
     public void initMediaController(final BaseVideoView brightcoveVideoView) {
@@ -90,14 +87,7 @@ public class MainActivity extends BrightcovePlayer {
 
     private void initButtons(final BaseVideoView brightcoveVideoView) {
 
-        Typeface font = Typeface.createFromAsset(this.getAssets(), FONT_AWESOME);
-        Button thumbsUp = brightcoveVideoView.findViewById(R.id.thumbs_up);
-        if (thumbsUp != null) {
-            // By setting this type face, we can use the symbols(icons) present in the font awesome file.
-            thumbsUp.setTypeface(font);
-        }
-        thumbsUp.setOnClickListener(v -> Toast.makeText(MainActivity.this, "TEST", Toast.LENGTH_SHORT).show());
-
+        // Custom Dialog Box for Audio Tracks
         BrightcoveAudioTracksController customAudioControl = new BrightcoveAudioTracksController(brightcoveVideoView, this) {
 
             @Override
@@ -134,6 +124,8 @@ public class MainActivity extends BrightcovePlayer {
             }
         };
 
+
+        // onClick handler override that references the custom dialog box builder
         Button audioTracks = brightcoveVideoView.findViewById(R.id.audio_tracks);
         audioTracks.setOnClickListener(new View.OnClickListener() {
             private int audioTracksDialogOkToken;

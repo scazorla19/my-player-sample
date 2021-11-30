@@ -3,13 +3,13 @@
     <string name="app_name">Customized Control Sample App</string>
 
     <!-- A sample Brightcove Edge Account ID -->
-    <string name="account">6168375615001</string>
+    <string name="account">Enter_Own_AccountID</string>
 
     <!-- A sample Brightcove Edge Policy Key -->
-    <string name="policy">BCpkADawqM1I2MnNUILa29oZgYUJju0zgQYiItI0yFhRWB5EasYgHkPRR40SeoIqlVqCvFwXAVFYa1araiVQoyl5XbkLxOCFChaH2Q2DiLGefKmfBcGIlppHak-o4r-XOZsfU1mTg5ZgTMbV</string>
+    <string name="policy">Enter_Own_Policy_Key</string>
 
     <!-- A sample Brightcove Video ID -->
-    <string name="videoId">1712108833430410017</string>
+    <string name="videoId">Enter_Own_VideoID</string>
 
     <!-- Below are hex strings taken from the fontawesome-webfont.ttf used in the Brightcove SDK -->
     <string name="brightcove_controls_rewind">&#xf04a;</string>
